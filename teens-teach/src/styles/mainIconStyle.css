@@ -1,5 +1,5 @@
 :root {
-  --background: #242121ff;
+  --background: #242121;
   --TeensTeachBlue: #1ba8e9;
   --TeensTeachAlt1: #45bfd7;
   --TeensTeachAlt2: #1ea4cd;
@@ -65,7 +65,7 @@
   height: 100%;
   width: 100%;
   border-radius: 50%;
-  backdrop-filter: blur(2.1em);
+  backdrop-filter: blur(1.1em);
 }
 
 .container:after,
@@ -179,8 +179,9 @@
 #title {
   color: var(--TeensTeachBlue);
   margin-top: 30px;
-  font-size: larger;
+  font-size: 2em;
   text-align: center;
+  font-weight: bold;
   font-family: "Comfortaa", cursive;
 }
 .frontPage {

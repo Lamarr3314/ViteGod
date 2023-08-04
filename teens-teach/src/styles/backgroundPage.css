@@ -1,49 +1,43 @@
-.navbar {
-  height: 100vh;
-  position: fixed;
-  bottom: 0;
-  /* background-color: blue; */
-  width: 80px;
-}
-#navContainer {
-  width: 80px;
-  height: 80px;
+#background {
+  width: 10vh;
+  height: 10vh;
   /* right: 0; */
   bottom: 0;
   position: fixed;
   right: 0;
 }
-#navImage {
-  position: fixed;
-  width: 70px;
-  height: 70px;
-  left: 0;
-  bottom: 0;
-  z-index: 4;
-  margin-left: 10px;
-  margin-bottom: 10px;
+#pageTitle {
+  color: black;
+  display: block;
+  font-size: 60px;
+  margin-top: 30px;
+  font-weight: bolder;
+  text-align: center;
+  font-family: "Comfortaa", cursive;
 }
-
-.navContainer {
-  height: 82px; /*changeThis 100vh*/
-  width: 82px;
-  margin-left: 4px;
-  margin-bottom: 4px;
+.fullPage div{
+  margin-left: 90px;
+}
+.background {
+  height: 99vh; /*changeThis 100vh*/
+  margin-bottom: 0.5vh;
+  /* margin-left: 90px; */
+  width: calc(100% - 94px);
   position: absolute;
   /* margin: auto; */
   /* left: 0; */
   left: 0;
   bottom: 0;
-  border-radius: 10%;
+  border-radius: 20px;
   overflow: hidden;
   /* animation: spin 8s infinite linear; */
   /* box-shadow: rgba(14, 230, 230, 0.308) 10px 30px 22px 10px; */
   /* box-shadow: rgb(14 230 230) 7px -3px 20px 0px; */
   box-shadow: rgb(14 230 230) 2px -1px 20px 0px;
-  z-index: 3;
+  z-index: -1;
   transition: all 1.5s cubic-bezier(0.54, 0.1, 0.31, 1.08);
 }
-.navContainer:active {
+.background:active {
   height: 99vh; /*changeThis 100vh*/
   border-radius: 20px;
 }
@@ -58,64 +52,24 @@
   z-index: 10;
   position: fixed;
 }
-.elements div{
-    opacity: 0;
-}
-.elements div img {
-  width: 60px;
-  height: 60px;
-}
-.elements div {
-  width: max-content;
-  height: 60px;
-  width: 60px;
-  background-color: #00afff;
-  /* background-color: white; */
-  border-radius: 10px;
-
-  display: flex;
-  flex-direction: row;
-
-  /* box-shadow: rgba(29, 199, 233, 0.85) 0px 30px 60px -12px inset,
-    rgba(65, 15, 15, 0.3) 0px 18px 36px -18px inset; */
-
-  /* box-shadow: rgba(29, 199, 233, 0.85) -16px -19px 13px -12px inset,
-    rgba(255, 255, 255, 0.972) 0px 18px 36px -18px inset; */
-
-  /* box-shadow: rgba(50, 81, 93, 0.25) 0px 30px 60px -12px inset,
-    rgba(0, 0, 0, 0.3) 0px 18px 36px -18px inset; */
-
-  box-shadow: rgba(50, 81, 93, 0.25) 2px 2px 9px 4px inset,
-    rgba(0, 0, 0, 0.3) 0px 18px 36px -18px inset;
-
-  /* box-shadow: rgba(29, 199, 233, 0.85) 4px -4px 8px 2px inset,
-    rgba(65, 15, 15, 0.3) 0px 18px 36px -18px inset; */
-
-  /* box-shadow: rgba(29, 199, 233, 0.85) 7px -6px 9px 0px inset,
-    rgba(65, 15, 15, 0.3) 0px 18px 36px -18px inset; */
-
-  /* box-shadow: rgba(29, 199, 233, 0.85) -2px 1px 7px 1px inset,
-    rgba(65, 15, 15, 0.3) 0px 18px 36px -18px inset; */
-}
-
 @keyframes spin {
   100% {
     transform: rotate(360deg);
   }
 }
 
-.navContainer:before {
+.background:before {
   position: absolute;
   content: "";
   height: 100%;
   width: 100%;
-  border-radius: 10%; /*changeThing, 5%*/
+  border-radius: 20px; /*changeThing, 5%*/
   overflow: hidden;
-  backdrop-filter: blur(.9em); /*changeThing, 1.2*/
+  backdrop-filter: blur(4em); /*changeThing, 1.2*/
 }
 
-.navContainer:after,
-.navContainer:after {
+.background:after,
+.background:after {
   position: absolute;
   content: "";
   height: 50%;
@@ -125,7 +79,7 @@
   border-radius: 50%;
 }
 
-.navContainer div {
+.background div {
   position: absolute;
   border-radius: 50%;
   z-index: -1;
@@ -138,7 +92,7 @@
   }
 }
 
-.navContainer div:nth-child(1) {
+.background div:nth-child(1) {
   height: 150%;
   width: 100%;
   background-color: var(--TeensTeachAlt1);
@@ -148,7 +102,7 @@
   animation-delay: 1s;
 }
 
-.navContainer div:nth-child(2) {
+.background div:nth-child(2) {
   height: 100%;
   width: 100%;
   background-color: var(--TeensTeachAlt2);
@@ -158,7 +112,7 @@
   animation-delay: 5s;
 }
 
-.navContainer div:nth-child(3) {
+.background div:nth-child(3) {
   height: 100%;
   width: 80%;
   background-color: var(--TeensTeachAlt3);
@@ -168,7 +122,7 @@
   animation-delay: 1s;
 }
 
-.navContainer div:nth-child(4) {
+.background div:nth-child(4) {
   height: 50%;
   width: 75%;
   background-color: var(--TeensTeachAlt4);
@@ -178,7 +132,7 @@
   animation-delay: 6s;
 }
 
-.navContainer div:nth-child(5) {
+.background div:nth-child(5) {
   height: 45%;
   width: 55%;
   background-color: var(--TeensTeachAlt5);
@@ -203,7 +157,7 @@
   padding-bottom: 40px;
 }
 
-.navContainer div:nth-child(6) {
+.background div:nth-child(6) {
   height: 25%;
   width: 55%;
   background-color: var(--TeensTeachBlue);
@@ -211,7 +165,7 @@
   left: -15%;
   animation-duration: 9s;
 }
-.navContainer div:nth-child(7) {
+.background div:nth-child(7) {
   height: 125%;
   width: 55%;
   background-color: var(--TeensTeachAlt6);
@@ -220,7 +174,7 @@
   left: -15%;
   animation-duration: 5s;
 }
-.navContainer div:nth-child(8) {
+.background div:nth-child(8) {
   height: 125%;
   width: 55%;
   background-color: var(--TeensTeachAlt5);
@@ -229,7 +183,7 @@
   right: -5%;
   animation-duration: 5s;
 }
-.navContainer div:nth-child(9) {
+.background div:nth-child(9) {
   height: 55%;
   width: 25%;
   background-color: var(--TeensTeachAlt6);
@@ -238,7 +192,7 @@
   animation-duration: 15s;
   animation-delay: 3s;
 }
-.navContainer div:nth-child(10) {
+.background div:nth-child(10) {
   height: 25%;
   width: 55%;
   background-color: var(--TeensTeachAlt7);
@@ -246,7 +200,7 @@
   right: 5%;
   animation-duration: 12s;
 }
-.navContainer div:nth-child(11) {
+.background div:nth-child(11) {
   height: 25%;
   width: 55%;
   background-color: var(--TeensTeachAlt8);
@@ -255,22 +209,6 @@
   right: 55%;
   animation-duration: 7s;
 }
-.elements div:nth-child(1){
-    transition-duration: all 3s;
-}
-#backgroundText h1{
-  text-orientation: upright;
-  writing-mode: vertical-rl;
-  height: 89vh;
-  width: 80px;
-  margin-left: -12px;
-  color: var(--TeensTeachBlue);
-  font-size: 45px;
-  text-align: center;
-  font-weight: bold;
-  font-family: "Comfortaa", cursive;
-}
-#backgroundText{
-  position: absolute;
-  z-index: -2px;
+.elements div:nth-child(1) {
+  transition-duration: all 3s;
 }

@@ -1,0 +1,10 @@
+.smallText {
+  font-size: 30px;
+  margin: 100px;
+}
+.tile {
+  margin-right: 5%;
+  width: 90%;
+  background-color: var(--background);
+  border-radius: 100px;
+}
