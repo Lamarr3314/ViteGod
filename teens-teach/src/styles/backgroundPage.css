@@ -15,7 +15,7 @@
   text-align: center;
   font-family: "Comfortaa", cursive;
 }
-.fullPage div{
+.mainSection, .background{
   margin-left: 90px;
 }
 .background {

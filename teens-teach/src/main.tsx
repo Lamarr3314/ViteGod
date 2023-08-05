@@ -7,6 +7,7 @@ import "./styles/backgroundPage.css";
 import "./styles/about.css";
 import "./styles/mission.css";
 import "./styles/generatlEl.css";
+import "./styles/work.css";
 
 import IconComponent from "./components/MainComponent.tsx";
 import AboutPage from "./components/pages/aboutUs.tsx";
