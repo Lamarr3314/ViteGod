@@ -16,12 +16,12 @@ import ImpactPage from "./components/pages/ourImpact.tsx";
 import MissionPage from "./components/pages/ourMission.tsx";
 import WorkPage from "./components/pages/whatWeDo.tsx";
 
-import { currentPage } from "./framework/PageEnums.ts";
+// import { currentPage } from "./framework/PageEnums.ts";
 import DonatePage from "./components/pages/donate.tsx";
 
 const mainRoot = ReactDOM.createRoot(document.getElementById("root")!);
 mainRoot.render(<IconComponent />);
-let page: currentPage = currentPage.main;
+// let page: currentPage = currentPage.main;
 const navIcons = document.querySelectorAll<HTMLElement>(".elements div");
 const translatePress = new Map<string, React.ReactNode>();
 translatePress.set("mission_div", <MissionPage />);

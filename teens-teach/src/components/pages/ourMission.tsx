@@ -1,4 +1,4 @@
-import { ReactElement } from "react";
+// import { ReactElement } from "react";
 function MissionPage() {
   return (
     <div className="fullPage">

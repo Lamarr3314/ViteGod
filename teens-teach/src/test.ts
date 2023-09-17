@@ -1,25 +1,25 @@
 //imports
-import { elementHandler, imageHandler } from "./framework/elementHandler";
+import { imageHandler } from "./framework/elementHandler";
 
 //global element Instantiation
 let iconImage = new imageHandler("mainImage");
-let backShadow = new imageHandler(".backShadow");
+// let backShadow = new imageHandler(".backShadow");
 const navIcons = document.querySelectorAll<HTMLElement>(".elements div");
 let navImage = document.querySelector<HTMLElement>(".imageHolder");
 const navBack = document.querySelector<HTMLElement>(".navContainer");
 let openNav: boolean = false;
 let navHeight: string = "11vh";
 let navBorder: string = "10%";
-let navBlur: string = "blur(0.2em)";
+// let navBlur: string = "blur(0.2em)";
 
 // setNavTransition();
 navigationNav();
 
 //global helper variables Instantiation
-let screenWidth = screen.width;
+// let screenWidth = screen.width;
 let screenHeight = screen.height;
 let imageSize = screenHeight / 2;
-let backgroundSize = imageSize + 100;
+// let backgroundSize = imageSize + 100;
 
 //startup operations
 iconImage.resizePX(imageSize, imageSize);
@@ -32,12 +32,12 @@ function navigationNav() {
         if (!openNav) {
           navHeight = "99vh";
           navBorder = "20px";
-          navBlur = "blur(1.2em)";
+          // navBlur = "blur(1.2em)";
           showNavIcons();
         } else {
           navHeight = "82px";
           navBorder = "10%";
-          navBlur = "blur(0.5em)";
+          // navBlur = "blur(0.5em)";
           hideNavIcons();
         }
         navBack.style.height = navHeight;

@@ -1,4 +1,4 @@
-import { ReactElement } from "react";
+// import { ReactElement } from "react";
 function ContactPage() {
   return (
     <div className="fullPage">

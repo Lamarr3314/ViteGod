@@ -22,10 +22,10 @@ export class elementHandler {
   opacity(type: number) {
     this.element.style.opacity = "" + type;
   }
-  marginLeft(type: number) {}
-  marginRight(type: number) {}
-  borderLeft(type: number) {}
-  borderRight(type: number) {}
+  // marginLeft(type: number) {}
+  // marginRight(type: number) {}
+  // borderLeft(type: number) {}
+  // borderRight(type: number) {}
 }
 export class imageHandler extends elementHandler {
   constructor(selector: string) {
